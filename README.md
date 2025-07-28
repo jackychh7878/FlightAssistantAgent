@@ -27,8 +27,8 @@ A conversational AI assistant that helps users manage their airline reservations
 Clone the repository and install dependencies:
 
 ```bash
-git clone <repository-url>
-cd AKAAgenticAI
+git clone https://github.com/jackychh7878/FlightAssistantAgent.git
+cd FlightAssistantAgent
 pip install -r requirements.txt
 ```
 
