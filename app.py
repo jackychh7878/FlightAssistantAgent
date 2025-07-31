@@ -110,11 +110,11 @@ def reload_chat():
                 st.write(last_message_content)
             if st.session_state.voice_mode and last_message_content:
                 # Azure TTS
-                # st.audio(azure_tts_response(text=last_message_content), format="audio/mpeg", autoplay=st.session_state.voice_mode_auto_play and (st.session_state.voice_mode_auto_play_already == False))
+                st.audio(azure_tts_response(text=last_message_content), format="audio/mpeg", autoplay=st.session_state.voice_mode_auto_play and (st.session_state.voice_mode_auto_play_already == False))
                 # Google TTS
                 # st.audio(google_tts_response(st.session_state.google_tts_client, last_message_content), format="audio/mpeg", autoplay=st.session_state.voice_mode_auto_play and (st.session_state.voice_mode_auto_play_already == False))
                 # Fano TTS
-                st.audio(fanolab_tts_response(text=last_message_content), format="audio/mpeg",autoplay=st.session_state.voice_mode_auto_play and (st.session_state.voice_mode_auto_play_already == False))
+                # st.audio(fanolab_tts_response(text=last_message_content), format="audio/mpeg",autoplay=st.session_state.voice_mode_auto_play and (st.session_state.voice_mode_auto_play_already == False))
                 st.session_state.voice_mode_auto_play_already = True
 
 def stream_data(response_data):
